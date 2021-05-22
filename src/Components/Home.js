@@ -1,21 +1,13 @@
 import axios from "axios";
 import React, { Component } from "react";
+import ReactPlayer from "react-player"
 
 class Home extends Component {
-  state = { input: "", videos: []}
-  // id: "", thumbnail: "", title: ""};
+  state = { input: "", videos: [], videoID: ""}
 
   handleInput = (e) => {
     this.setState({ input: e.target.value });
   };
-
-    // handleSubmit = async(e) => {
-    //   e.preventDefault();
-    //   // const {videos} = this.state
-     
-    //   //   this.setState({id: video.id.videoId, thumbnail: video.snippet.thumbnails.medium.url, title: video.title})
-      
-    // }
 
   handleSubmit = async (e) => {
     e.preventDefault()
@@ -29,14 +21,18 @@ class Home extends Component {
     }
   };
   
+  handleClick = (e) => {
+    // const videoIdValue= (e.target).next()
+    this.setState({videoID: e.target.parentElement.id})
+    
+  }
   // componentDidMount() {
   //   this.fetchMovies();
   // }
 
   render() {
-    const { input, videos } = this.state;
-
-     console.log(videos)
+    const { input, videos, videoID } = this.state;
+    console.log(this.state)
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
@@ -50,12 +46,26 @@ class Home extends Component {
         </form>
       <ul>
         {videos.map(video=>{
-         return <li key= {video.id.videoId}>
+         return <li key= {video.id.videoId} onClick={this.handleClick} id={video.id.videoId}>
+           {console.log(video.id.videoId)}
+       
+           {/* <section> */}
+           {/* <a href={`https://www.youtube.com/watch?v=${video.id.videoId}`} > */}
            <img src= {video.snippet.thumbnails.medium.url} alt="thumbnail" />
-           <p>{video.snippet.title}</p>
+           <h3>{video.snippet.title}</h3>
+           {/* </section> */}
+           {/* </a> */}
+           <br></br>
           </li>
         })}
+        <ReactPlayer 
+        controls
+        width="480px"
+        height="240px"
+        url = {`https://www.youtube.com/watch?v=${videoID}`}
+        />
       </ul>
+
       </div>
     );
   }
