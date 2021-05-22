@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { Component } from "react";
 
 class Home extends Component {
@@ -9,9 +10,20 @@ class Home extends Component {
   
   handleSubmit = (e) => {
     e.preventDefault();
-
   }
 
+  fetchMovies = async () => {
+    try {
+      const res = await axios.get(`https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY }`)
+      debugger
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  componentDidMount() {
+    this.fetchMovies();
+  }
 
     render() {
        const {input} = this.state;
