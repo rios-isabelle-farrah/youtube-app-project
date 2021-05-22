@@ -43,8 +43,8 @@ class Home extends Component {
           <button type="submit">Search</button>
         </form>
         {/* <Link to={"/searchResults"}> */}
-         
-          {/* <SearchResults
+
+        {/* <SearchResults
             videos={videos}
             handleClick={this.handleClick}
             videoID={videoID}
@@ -53,28 +53,34 @@ class Home extends Component {
         {/* ${character.id}`}> {character.name}  */}
         {/* <ShowVideo videoID={videoID} /> */}
         <ul>
-        {videos.map(video=>{
-         return <li key= {video.id.videoId} onClick={this.handleClick} id={video.id.videoId}>
-        <Link to={`/searchResults/${videoID}`}>
-          {console.log(videoID)}
-          {/* <ShowVideo videoID={videoID} /> */}
-           <img src= {video.snippet.thumbnails.medium.url} alt="thumbnail" />
-           <h3>{video.snippet.title}</h3>
-          
-        </Link>
-          
-       
-          {/* <Link to={`/characters/${character.id}`}> {character.name} </Link> */}
-          
-          </li>
-        })}
-        {/* <ReactPlayer 
+          {videos.map((video) => {
+            return (
+              <li
+                key={video.id.videoId}
+                onClick={this.handleClick}
+                id={video.id.videoId}
+              >
+                <Link to={`/searchResults/${video.id.videoId}`}>
+                  {console.log(video.id.videoId)}
+                  {/* <ShowVideo videoID={videoID} /> */}
+                  <img
+                    src={video.snippet.thumbnails.medium.url}
+                    alt="thumbnail"
+                  />
+                  <h3>{video.snippet.title}</h3>
+                </Link>
+
+                {/* <Link to={`/characters/${character.id}`}> {character.name} </Link> */}
+              </li>
+            );
+          })}
+          {/* <ReactPlayer 
         controls
         width="480px"
         height="240px"
         url = {`https://www.youtube.com/watch?v=${videoID}`}
         /> */}
-      </ul>
+        </ul>
       </div>
     );
   }
