@@ -6,6 +6,22 @@ class Home extends Component {
   state = { input: "", videos: [], videoID: ""}
 
   handleInput = (e) => {
+<<<<<<< HEAD:src/Components/AppOne/Home.js
+    this.setState({input: e.target.value})
+  }
+  
+  handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
+  fetchMovies = async () => {
+    try {
+      const res = await axios.get(`https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY }`)
+      debugger
+    } catch (error) {
+      console.log(error)
+    }
+=======
     this.setState({ input: e.target.value });
   };
 
@@ -25,14 +41,24 @@ class Home extends Component {
     // const videoIdValue= (e.target).next()
     this.setState({videoID: e.target.parentElement.id})
     
+>>>>>>> 0b2e1243df4312aaeea5108357e99f1f326db7ad:src/Components/Home.js
   }
   // componentDidMount() {
   //   this.fetchMovies();
   // }
 
+<<<<<<< HEAD:src/Components/AppOne/Home.js
+  componentDidMount() {
+    this.fetchMovies();
+  }
+
+    render() {
+       const {input} = this.state;
+=======
   render() {
     const { input, videos, videoID } = this.state;
     console.log(this.state)
+>>>>>>> 0b2e1243df4312aaeea5108357e99f1f326db7ad:src/Components/Home.js
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
