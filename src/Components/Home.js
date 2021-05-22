@@ -1,38 +1,36 @@
 import axios from "axios";
 import React, { Component } from "react";
-import ReactPlayer from "react-player"
+import ReactPlayer from "react-player";
+import ShowVideo from "./ShowVideo";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
-  state = { input: "", videos: [], videoID: ""}
+  state = { input: "", videos: [], videoID: "" };
 
   handleInput = (e) => {
     this.setState({ input: e.target.value });
   };
 
   handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     try {
       const res = await axios.get(
         `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${this.state.input}&key=${process.env.REACT_APP_API_KEY}`
       );
-    this.setState({videos: res.data.items})
+      this.setState({ videos: res.data.items });
     } catch (error) {
       console.log(error);
     }
   };
-  
+
   handleClick = (e) => {
-    // const videoIdValue= (e.target).next()
-    this.setState({videoID: e.target.parentElement.id})
-    
-  }
-  // componentDidMount() {
-  //   this.fetchMovies();
-  // }
+    this.setState({ videoID: e.target.parentElement.id });
+    console.log(this.state.videoID);
+  };
 
   render() {
     const { input, videos, videoID } = this.state;
-    console.log(this.state)
+    console.log(this.state);
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
@@ -42,30 +40,41 @@ class Home extends Component {
             onChange={this.handleInput}
             placeholder="Search"
           />
-          <button type="submit">Search</button>  
+          <button type="submit">Search</button>
         </form>
-      <ul>
+        {/* <Link to={"/searchResults"}> */}
+         
+          {/* <SearchResults
+            videos={videos}
+            handleClick={this.handleClick}
+            videoID={videoID}
+          /> */}
+        {/* </Link> */}
+        {/* ${character.id}`}> {character.name}  */}
+        {/* <ShowVideo videoID={videoID} /> */}
+        <ul>
         {videos.map(video=>{
          return <li key= {video.id.videoId} onClick={this.handleClick} id={video.id.videoId}>
-           {console.log(video.id.videoId)}
-       
-           {/* <section> */}
-           {/* <a href={`https://www.youtube.com/watch?v=${video.id.videoId}`} > */}
+        <Link to={`/searchResults/${videoID}`}>
+          {console.log(videoID)}
+          {/* <ShowVideo videoID={videoID} /> */}
            <img src= {video.snippet.thumbnails.medium.url} alt="thumbnail" />
            <h3>{video.snippet.title}</h3>
-           {/* </section> */}
-           {/* </a> */}
-           <br></br>
+          
+        </Link>
+          
+       
+          {/* <Link to={`/characters/${character.id}`}> {character.name} </Link> */}
+          
           </li>
         })}
-        <ReactPlayer 
+        {/* <ReactPlayer 
         controls
         width="480px"
         height="240px"
         url = {`https://www.youtube.com/watch?v=${videoID}`}
-        />
+        /> */}
       </ul>
-
       </div>
     );
   }
