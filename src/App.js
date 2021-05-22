@@ -2,17 +2,19 @@ import { Route, Switch } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import About from "./Components/About";
 import Home from "./Components/Home";
-
+import ShowVideo from "./Components/ShowVideo";
 import "./App.css";
-import "./Components/NavBar.css"
-import "./Components/About.css"
+import "./Components/NavBar.css";
+import "./Components/About.css";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Switch>
+        <Route path={"/searchResults/:videoId"} component={ShowVideo} />
         <Route path={"/about"} component={About} />
+        {/* <Route path={"/searchResults"} component={SearchResults} /> */}
         <Route exact path={"/"} component={Home} />
       </Switch>
     </div>
