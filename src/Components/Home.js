@@ -1,11 +1,11 @@
 import axios from "axios";
-<<<<<<< HEAD
-import React, { useState } from "react";
-import "./Home.css"
-=======
 import React from "react";
 
->>>>>>> 50323ba8869848512a6f3e463896ca8e9b7e51eb
+
+
+import React from "react";
+
+
 import { Link } from "react-router-dom";
 
 import "./Home.css"
