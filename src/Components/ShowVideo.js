@@ -5,7 +5,7 @@ import { useHistory, useParams } from 'react-router-dom'
 
 import "./ShowVideo.css";
 
-const ShowVideo = (props) => {
+const ShowVideo = () => {
   const { videoID } = useParams();
   const history = useHistory();
 
