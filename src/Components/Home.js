@@ -3,9 +3,11 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-const Home = () => {
-  const [input, setInput] = useState("");
-  const [videos, setVideos] = useState([]);
+const Home = (props) => {
+  // const [setInput] = useState("");
+  // const [setVideos] = useState([]);
+
+  const {input, setInput, videos, setVideos, setVideoID} = props;
 
   const handleInput = (e) => {
     setInput(e.target.value);
@@ -21,7 +23,12 @@ const Home = () => {
     } catch (error) {
       console.log(error);
     }
+    setInput("")
   };
+
+  const handleClick = (video) => {
+    setVideoID(video.id.videoId);
+  }
 
   return (
     <div>
@@ -39,7 +46,7 @@ const Home = () => {
         {videos.map((video) => {
           return (
             <li key={video.id.videoId} id={video.id.videoId}>
-              <Link to={`/searchResult/${video.id.videoId}`}>
+              <Link to={`/searchResult/${video.id.videoId}`} handleClick={handleClick}>
                 <img
                   src={video.snippet.thumbnails.medium.url}
                   alt="thumbnail"
