@@ -6,19 +6,44 @@ import ShowVideo from "./Components/ShowVideo";
 import "./App.css";
 import "./Components/NavBar.css";
 import "./Components/About.css";
+import { useState } from "react";
 
-function App() {
+
+const App = () => {
+  const [input, setInput] = useState("");
+  const [videos, setVideos] = useState([]);
+  const [fullName, setFullName] = useState("");
+  const [comment, setComment] = useState("");
+  const [list, setList] = useState([]);
+
   return (
     <div className="App">
            <NavBar className="nav-bar" />
       <Switch>
-        <Route path={"/searchResult/:videoID"} component={ShowVideo} />
-        <Route path={"/about"} component={About} />
-        <Route exact path={"/"} component={Home} />
+        <Route path={"/searchResult/:videoID"}>
+          <ShowVideo
+          fullName={fullName}
+          setFullName={setFullName}
+          comment={comment}
+          setComment={setComment}
+          list={list}
+          setList={setList} />
+        </Route>
+        <Route path={"/about"} >
+         <About />
+         </Route>
+        <Route exact path={"/"}>
+          <Home
+            input={input}
+            setInput={setInput}
+            videos={videos}
+            setVideos={setVideos}
+          />
+        </Route>
       </Switch>
  
     </div>
   );
-}
+};
 
 export default App;

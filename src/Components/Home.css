@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .input-top{
     display: flex;
     /* align-items:center;
@@ -121,4 +122,8 @@ text-align: center;
 
     width: 90%;
 
+=======
+.videoItems {
+    list-style: none;
+>>>>>>> 50323ba8869848512a6f3e463896ca8e9b7e51eb
 }
