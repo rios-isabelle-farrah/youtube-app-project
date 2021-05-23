@@ -5,7 +5,7 @@ import { useHistory, useParams } from "react-router-dom";
 import "./ShowVideo.css";
 
 const ShowVideo = ({
-  fullName,
+  fullName, 
   setFullName,
   comment,
   setComment,
