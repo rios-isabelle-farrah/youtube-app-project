@@ -37,8 +37,9 @@ const App = () => {
         <Route path={"/searchResult/:videoID"}>
           <ShowVideo />
         </Route>
-        {/* <Route path={"/searchResults/"} component={SearchResults} /> */}
-        <Route path={"/about"} component={About} />
+        <Route path={"/about"} >
+         <About />
+         </Route>
         <Route exact path={"/"}>
           <Home
             input={input}

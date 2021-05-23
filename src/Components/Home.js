@@ -23,6 +23,7 @@ const Home = (props) => {
     } catch (error) {
       console.log(error);
     }
+    setInput("")
   };
 
   const handleClick = (video) => {

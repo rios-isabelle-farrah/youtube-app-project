@@ -1,12 +1,12 @@
 import ReactPlayer from "react-player";
 import React from "react";
-import { useHistory } from 'react-router-dom'
+import { useHistory, useParams } from 'react-router-dom'
 
 
 import "./ShowVideo.css";
 
 const ShowVideo = (props) => {
-  const { videoID } = props;
+  const { videoID } = useParams();
   const history = useHistory();
 
   const goBack = () => {
@@ -17,7 +17,7 @@ const ShowVideo = (props) => {
   return (
     <div className="showVideo">
       <br></br>
-      <button onClick={goBack}>Go Back **FYI,this does not currently work. We can tackle this on Sunday**</button>
+      <button onClick={goBack}>Go Back</button>
       <br></br>
       <ReactPlayer className="videoDisplay"
         controls
