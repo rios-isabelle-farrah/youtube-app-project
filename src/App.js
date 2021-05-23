@@ -7,7 +7,7 @@ import "./App.css";
 import "./Components/NavBar.css";
 import "./Components/About.css";
 import { useState } from "react";
-import axios from "axios";
+
 
 const App = () => {
   const [input, setInput] = useState("");
@@ -16,6 +16,7 @@ const App = () => {
   const [fullName, setFullName] = useState("");
   const [comment, setComment] = useState("");
   const [list, setList] = useState([]);
+
 
   return (
     <div className="App">
@@ -39,7 +40,6 @@ const App = () => {
             setInput={setInput}
             videos={videos}
             setVideos={setVideos}
-            setVideoID={setVideoID}
           />
         </Route>
       </Switch>
