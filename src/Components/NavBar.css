@@ -1,4 +1,24 @@
 .navBar {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    background-color: black;
+    width: 8%;
+    height: 1000px;
+
+    margin-top: 0px;
+    margin-bottom:822px;
+
 }
+
+
+
+.navBar>* {
+    /* background-color: #f1f1f1; */
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    
+  }

@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <NavBar />
+           <NavBar className="nav-bar" />
       <Switch>
         <Route path={"/searchResult/:videoID"}>
           <ShowVideo
@@ -41,6 +41,7 @@ const App = () => {
           />
         </Route>
       </Switch>
+ 
     </div>
   );
 };

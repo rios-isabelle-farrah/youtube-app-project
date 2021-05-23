@@ -1,3 +1,132 @@
+
+.input-top{
+    display: flex;
+    /* align-items:center;
+    justify-content:center; */
+    width: 98%;
+    height: 47px;
+    /* margin-top:20px; */
+    font-size: 40px;
+    border: none;
+    border-radius: 5%;
+    border-radius: 55px;
+    outline:none;
+    margin-left: 12px;
+    caret-color:purple;
+    
+
+   
+    /* color: black; */
+ 
+}
+.input-top[type=text]:focus {
+    background-color:lightgrey;
+  }
+
+
+
+.magnify-glass{
+    width: 60px;
+    height:60px;
+    margin-top:20px;
+    font-size: 40px;
+    margin-bottom: 32px;
+    cursor: pointer;
+
+}
+.search-section{
+    display: flex;
+    justify-content: space-between;
+
+    border: black solid 6px;
+    width: 50%;
+    height: 20px;
+    margin-top:3px;
+    font-size: 40px;
+    padding-bottom: 30px;
+    padding-top: 2px;
+    border-radius: 25px;
+
+
+}
+.form-top{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6px;
+ 
+    padding-top:1px;
+    border-radius: 7%;
+    ;
+}
+
+.button-search{
+    display: flex;
+    align-items: center;
+    height: 70px;
+ 
+    background-color: transparent;
+    border: none;
+    margin-bottom: 13px;
+    padding-bottom: 10px;
+
+}
+
+.image-boxes{
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: light-grey;
+    text-align: center;
+
+}
+
+li{
+/* height: 600px;
+    width: 600px;
+    margin:20px; */
+    /* flex: 0 32%;
+    height: 600px;
+    width: 600px;
+    
+
+    margin-bottom: 2%; (100-32*3)/2 */
+    width: 32%;
+    border:purple solid 3px;
+    margin-bottom:44px;
+    margin-top:44px;
+    align-content: center;
+ 
+    position: relative;
+    list-style: none;
+text-align: center;
+
+
+}
+
+.video-text{
+    width: 308px;
+    flex-wrap: wrap;
+    border:black solid 3px;
+    margin-left: 122px;
+}
+/* img {
+    width: 408px;
+    height: 288px;
+
+} */
+.main-div{
+
+    width: 90%;
+}
+
+
 .videoItems {
     list-style: none;
+
+
+
 }
