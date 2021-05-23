@@ -12,6 +12,10 @@ import { useState } from "react";
 const App = () => {
   const [input, setInput] = useState("");
   const [videos, setVideos] = useState([]);
+  const [videoID, setVideoID] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [comment, setComment] = useState("");
+  const [list, setList] = useState([]);
 
 
   return (
@@ -19,7 +23,13 @@ const App = () => {
       <NavBar />
       <Switch>
         <Route path={"/searchResult/:videoID"}>
-          <ShowVideo />
+          <ShowVideo 
+          fullName={fullName}
+          setFullName={setFullName}
+          comment={comment}
+          setComment={setComment}
+          list={list}
+          setList={setList}/>
         </Route>
         <Route path={"/about"} >
          <About />
