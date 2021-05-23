@@ -10,12 +10,13 @@ import "./Components/About.css";
 function App() {
   return (
     <div className="App">
-      <NavBar />
+           <NavBar className="nav-bar" />
       <Switch>
         <Route path={"/searchResult/:videoID"} component={ShowVideo} />
         <Route path={"/about"} component={About} />
         <Route exact path={"/"} component={Home} />
       </Switch>
+ 
     </div>
   );
 }

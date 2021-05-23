@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-
+import "./Home.css"
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -24,18 +24,20 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
+    <div className="main-div">
+      <form className="form-top" onSubmit={handleSubmit}>
+        <section className='search-section'>
+        <input className="input-top"
           type="text"
           value={input}
           onChange={handleInput}
           placeholder="Search"
         />
-        <button type="submit">Search</button>
+        <button className="button-search" type="submit"><img className="magnify-glass"src="https://i.pinimg.com/originals/95/56/f9/9556f902c9acfa20cea3b161fb9d45ee.png"></img></button>
+        </section>
       </form>
 
-      <ul>
+      <ul className="image-boxes">
         {videos.map((video) => {
           return (
             <li key={video.id.videoId} id={video.id.videoId}>
@@ -44,7 +46,7 @@ const Home = () => {
                   src={video.snippet.thumbnails.medium.url}
                   alt="thumbnail"
                 />
-                <h3>{video.snippet.title}</h3>
+                <h3 className="video-text">{video.snippet.title}</h3>
               </Link>
             </li>
           );
