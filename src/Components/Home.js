@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Home = (props) => {
-  // const [setInput] = useState("");
-  // const [setVideos] = useState([]);
 
   const {input, setInput, videos, setVideos, setVideoID} = props;
 
@@ -17,7 +15,7 @@ const Home = (props) => {
     e.preventDefault();
     try {
       const res = await axios.get(
-        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${input}&key=${process.env.REACT_APP_API_KEY}`
+        `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=9&type=video&q=${input}&key=${process.env.REACT_APP_API_KEY}`
       );
       setVideos(res.data.items);
     } catch (error) {
