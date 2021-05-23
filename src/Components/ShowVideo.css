@@ -1,0 +1,5 @@
+.showVideo {
+    display: grid;
+    flex: wrap;
+    justify-content: center;
+}
