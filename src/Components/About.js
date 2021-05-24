@@ -9,7 +9,7 @@ const About = () => {
        </section>     
        <ul className="the-team">
          <li className="bios">
-        <img src="https://www.hollywoodreporter.com/wp-content/uploads/2019/03/avatar-publicity_still-h_2019.jpg?w=681&h=383&crop=1"></img>
+        <img className="pics" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2b887d85197371.5d74f0d175dcd.gif"></img>
 <div className="right-bio-text">
 {" "}
           <p className="nameTitle-D">Durdona Djalilova: </p>
@@ -38,7 +38,7 @@ const About = () => {
    
 
          <li className="bios">
-            <img src="https://www.hollywoodreporter.com/wp-content/uploads/2019/03/avatar-publicity_still-h_2019.jpg?w=681&h=383&crop=1"></img>
+            <img className="pics" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2b887d85197371.5d74f0d175dcd.gif"></img>
         <div className="right-bio-text">         <p className="nameTitle-F">Farrah Rios: </p>
           <p>
             My love for problem-solving has led me on path as a software web
@@ -64,7 +64,7 @@ const About = () => {
         </li>
 
          <li className="bios">
-        <img src="https://www.hollywoodreporter.com/wp-content/uploads/2019/03/avatar-publicity_still-h_2019.jpg?w=681&h=383&crop=1"></img>
+        <img className="pics" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2b887d85197371.5d74f0d175dcd.gif"></img>
         <div className="right-bio-text">
         <p className="nameTitle-V">Vanessa Watson: </p>
           <p>

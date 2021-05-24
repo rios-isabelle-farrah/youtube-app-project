@@ -21,7 +21,7 @@ const App = () => {
          <NavBar className="nav-bar" />
       <Switch>
         <Route path={"/searchResult/:videoID"}>
-          <ShowVideo
+          <ShowVideo className="show-video"
           fullName={fullName}
           setFullName={setFullName}
           comment={comment}

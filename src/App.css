@@ -66,3 +66,7 @@ z-index:-8;
 .home-top-header{
  z-index: 0;
 }
+
+.show-video{
+  background-color: brown;
+}
