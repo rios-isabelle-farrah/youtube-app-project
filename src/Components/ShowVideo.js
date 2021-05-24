@@ -37,14 +37,32 @@ const ShowVideo = ({
 
 
   return (
-    <div className="showVideo">
+
+
+
+
+
+    
+    <div className='player-wrapper'>
+
+
+
       <br></br>
-      <button onClick={goBack}>Go Back</button>
+      {/* <button onClick={goBack}>Go Back</button> */}
+      <button className="previous" onClick={goBack}>
+
+
+❮ Previous
+
+
+
+</button>
       <br></br>
-      <ReactPlayer className="videoDisplay"
-        controls
-        width="480px"
-        height="240px"
+      <ReactPlayer 
+                className='react-player'
+          width='800px'
+          height='910px'
+            
         url={`https://www.youtube.com/watch?v=${videoID}`}
       />
 <br></br>

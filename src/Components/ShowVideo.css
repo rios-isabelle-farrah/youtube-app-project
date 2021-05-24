@@ -1,5 +1,10 @@
-.showVideo {
-    display: grid;
-    flex: wrap;
-    justify-content: center;
-}
+
+
+.react-player{
+    background-color: pink;
+    margin-left: 20%;
+} 
+
+/* .previous{
+    margin-bottom:10px;
+} */
