@@ -98,9 +98,10 @@
           font-size: 83px;
       }
       .li-comment{
-        font-size: 53px; 
+        font-size: 40px; 
         display:flex;
-        width: 500px;
+        width: 900px;
+        text-align: left;
       }
 
       .round-avi{
