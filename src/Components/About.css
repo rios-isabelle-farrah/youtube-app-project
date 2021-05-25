@@ -1,7 +1,7 @@
 main{
     height: 100%;
     width: 95%;
-    background-color: rgb(236, 213, 213);
+    background-color:white;
     /* padding-right: %;
     padding-left%; */
     margin-right:5%;
@@ -55,7 +55,7 @@ main{
 
 .the-team{
 
-    border-top: yellow solid 10px;
+    border-top: black solid 10px;
 margin-left: 3%;
     /* background-color: lightgreen; */
     padding-left: 2%;
@@ -69,7 +69,7 @@ margin-left: 3%;
     background-color: rgb(236, 213, 213);
     display:flex;
     height: 329px;
-    font-size: 18px;
+    font-size: 13px;
 
     padding-right:5% ;
     color: black;

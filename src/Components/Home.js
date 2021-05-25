@@ -17,7 +17,6 @@ const Home = (props) => {
         `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=9&q=${input}&key=${process.env.REACT_APP_API_KEY}`
       );
       setVideos(res.data.items);
-     
     } catch (error) {
       console.log(error);
     }
@@ -25,53 +24,35 @@ const Home = (props) => {
   };
 
   return (
-
-      <div className="main-div">
-      {/* <div className="menu" id="home" to={"/"}><img id="burger" height="80" width="80px" src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-0.jpg"/> </div> */}
-
+    <div className="main-div">
       <form className="form-top" onSubmit={handleSubmit}>
-      
-    <div className="youtube-logo">
-      <img  height="50" width="80px" src="https://www.freepnglogos.com/uploads/youtube-play-red-logo-png-transparent-background-6.png"/> 
-   Youtube
-      
-   </div>
-    
+        <div className="youtube-logo">
+          <img alt="youtube logo"
+            height="50"
+            width="80px"
+            src="https://www.freepnglogos.com/uploads/youtube-play-red-logo-png-transparent-background-6.png"
+          />
+          Youtube
+        </div>
         <section className="search-section">
-             <input
+          <input
             className="input-top"
             type="text"
             value={input}
             onChange={handleInput}
             placeholder="Search"
           />
-<i></i>
+          <i></i>
 
-
-
-{/* <input type="text" class="rq-form-element" /> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <button className="button-search" type="submit">
-            <img
+          <button className="button-search" type="submit" alt="button to search for videos">
+            <img alt="search icon in search bar"
               className="magnify-glass"
               src="http://www.clker.com/cliparts/w/r/Q/0/x/D/search-icon-light-grey-md.png"
             ></img>
           </button>
         </section>
       </form>
-{/* <div className="fixed-box"> */}
+  
       <ul className="image-boxes">
         {videos.map((video) => {
           return (
@@ -81,9 +62,10 @@ const Home = (props) => {
               id={video.id.videoId}
             >
               <Link to={`/searchResult/${video.id.videoId}`}>
-                <img className="thumbnail"
+                <img 
+                  className="thumbnail"
                   src={video.snippet.thumbnails.medium.url}
-                  alt="thumbnail"
+                  alt="thumbnail of video"
                 />
                 <h3 className="video-text">{video.snippet.title}</h3>
               </Link>
@@ -91,13 +73,7 @@ const Home = (props) => {
           );
         })}
       </ul>
-      {/* </div> */}
     </div>
-
-
-
-
- 
   );
 };
 
