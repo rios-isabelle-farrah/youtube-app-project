@@ -38,7 +38,7 @@ const ShowVideo = ({
     <div className="player-wrapper">
       <br></br>
       {/* <button onClick={goBack}>Go Back</button> */}
-      <button className="previous" onClick={goBack}>
+      <button className="previous" onClick={goBack} alt="button to go to previous page">
         ❮ Previous
       </button>
       <br></br>
@@ -68,23 +68,19 @@ const ShowVideo = ({
         />
    <div className="comment-div">
    Cancel
-        <button className="button-comment" type="submit">Comment</button>
+        <button className="button-comment" type="submit" alt="button to submitn comment">Comment</button>
 
    </div>
       </form>
       <ul className="ul-comment">
         {list.map((oneComment) => {
           return <li className="li-comment" key={oneComment}>
-            <img className="round-avi" src="https://www.pngkey.com/png/full/72-729665_user-avatar-2-circle.png">
+            <img className="round-avi" src="https://www.pngkey.com/png/full/72-729665_user-avatar-2-circle.png" alt="tiny anonynous avatar">
             </img>{oneComment}</li>;
         })}
       </ul>
 </div>
-      {/* <ul>
-        {list.map((oneComment) => {
-          return <li key={oneComment}>{oneComment}</li>;
-        })}
-      </ul> */}
+  
     </div>
   );
 };
