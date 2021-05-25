@@ -18,10 +18,10 @@ const App = () => {
 
   return (
     <div className="App">
-           <NavBar className="nav-bar" />
+         <NavBar className="nav-bar" />
       <Switch>
         <Route path={"/searchResult/:videoID"}>
-          <ShowVideo
+          <ShowVideo className="show-video"
           fullName={fullName}
           setFullName={setFullName}
           comment={comment}
@@ -33,7 +33,7 @@ const App = () => {
          <About />
          </Route>
         <Route exact path={"/"}>
-          <Home
+          <Home className="home-top-header"
             input={input}
             setInput={setInput}
             videos={videos}
@@ -41,7 +41,7 @@ const App = () => {
           />
         </Route>
       </Switch>
- 
+      {/* <NavBar className="nav-bar" /> */}
     </div>
   );
 };
