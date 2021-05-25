@@ -1,18 +1,17 @@
 import ReactPlayer from "react-player";
 import React from "react";
+import {useState} from "react"
 import { useHistory, useParams } from 'react-router-dom'
 
 
 import "./ShowVideo.css";
 
-const ShowVideo = ({
-  fullName, 
-  setFullName,
-  comment,
-  setComment,
-  list,
-  setList
-}) => {
+const ShowVideo = () => {
+
+  const [fullName, setFullName] = useState("");
+  const [comment, setComment] = useState("");
+  const [list, setList] = useState([]);
+
   const { videoID } = useParams();
   const history = useHistory();
 
@@ -55,6 +54,7 @@ const ShowVideo = ({
           name="fullName"
           placeholder="your name"
           value={fullName}
+          required
           onChange={handleName}
         />
         <input
@@ -62,6 +62,7 @@ const ShowVideo = ({
           name="comment"
           placeholder="your comment"
           value={comment}
+          required
           onChange={handleComment}
         />
         <button type="submit">Submit</button>
@@ -71,8 +72,6 @@ const ShowVideo = ({
           return <li key={oneComment}>{oneComment}</li>;
         })}
       </ul>
-
-
     </div>
   );
 };
