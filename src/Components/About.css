@@ -9,7 +9,7 @@ main{
     /* text-align: center; */
 }
 .green-header-left{
-    background-color: black;
+    background-color: #D9332B;
 
     width: 20%;
     margin-left:2%;
@@ -19,7 +19,7 @@ main{
     
 }
 .green-header-right{
-    background-color: black;
+    background-color: #C81D25;
 
     width: 20%;
     margin-left:1%;
@@ -90,10 +90,18 @@ padding-left: 3%;
 .nameTitle-D,.nameTitle-V,.nameTitle-F{
     color: black;
     font-size: 33px;
-    font-weight: bolder;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: roboto-condensed, sans-serif;
+font-weight: 700;
+font-style: normal;
+    /* font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 }
 
+.right-bio-text > .bio {
+    font-family: adelle-condensed, serif;
+font-weight: 300;
+font-style: normal;
+}
 
 .pics{
     width: 200px;

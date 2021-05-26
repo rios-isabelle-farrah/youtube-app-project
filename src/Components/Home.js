@@ -17,6 +17,7 @@ const Home = (props) => {
         `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=9&q=${input}&key=${process.env.REACT_APP_API_KEY}`
       );
       setVideos(res.data.items);
+      debugger
     } catch (error) {
       console.log(error);
     }
@@ -32,7 +33,7 @@ const Home = (props) => {
             width="80px"
             src="https://www.freepnglogos.com/uploads/youtube-play-red-logo-png-transparent-background-6.png"
           />
-          Youtube
+          YouTube
         </div>
         <section className="search-section">
           <input
@@ -67,7 +68,8 @@ const Home = (props) => {
                   src={video.snippet.thumbnails.medium.url}
                   alt="thumbnail of video"
                 />
-                <h3 className="video-text">{video.snippet.title}</h3>
+                <h3 className="video-text" >{video.snippet.title}</h3>
+                <p className="video-channel" >{video.snippet.channelTitle} Channel </p>
               </Link>
             </li>
           );

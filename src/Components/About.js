@@ -17,7 +17,7 @@ const About = () => {
           <div className="right-bio-text">
             {" "}
             <p className="nameTitle-D">Durdona Djalilova: </p>
-            <p>
+            <p classname="bio">
               As a selected Fellow at Pursuit, an intensive 12-month software
               engineering fellowship with a 9% acceptance rate, I am a Full
               Stack Web Developer. I was hooked after creating my first text
@@ -45,7 +45,7 @@ const About = () => {
           <div className="right-bio-text">
             {" "}
             <p className="nameTitle-F">Farrah Rios: </p>
-            <p>
+            <p classname="bio">
               My love for problem-solving has led me on path as a software web
               developer. As a selected Fellow at Pursuit, an intensive 12-month
               software engineering fellowship with a 9% acceptance rate, I am
@@ -75,7 +75,7 @@ const About = () => {
           ></img>
           <div className="right-bio-text">
             <p className="nameTitle-V">Vanessa Watson: </p>
-            <p>
+            <p classname="bio">
               My passion lies in creating luxurious systems that greatly improve
               the user's experience.<br></br>As a multi-hyphenate, I strive to
               concatenate my growing knowledge as a software engineer with my
