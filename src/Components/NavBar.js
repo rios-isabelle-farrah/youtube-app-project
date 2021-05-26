@@ -3,21 +3,16 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <nav className="navBar">
-      {/* 
-https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-0.jpg */}
-
-      {/* 
-<NavLink className="allNavs" id="home" to={"/"}><img id="burger" height="80" width="80px" src="https://www.freepnglogos.com/uploads/youtube-play-red-logo-png-transparent-background-6.png"/><span id="youtube" className="widen">Youtube</span> </NavLink> */}
       <NavLink className="allNavs" id="home" to={"/"}>
         <img
           id="burger"
           height="80px"
           width="80px"
-          src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-0.jpg" alt="Menu icon"
+          src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-0.jpg"
+          alt="Menu icon"
         />
         <span id="youtube" className="widen"></span>{" "}
       </NavLink>
-      {/* <NavLink className="allNavs" id="about" to="/About">About</NavLink> */}
       <NavLink className="allNavs" id="home" to={"/"}>
         <img
           height="80px"
