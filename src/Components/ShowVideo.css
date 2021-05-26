@@ -93,6 +93,16 @@
           color: black;
           background-color: rgb(99, 97, 97);
       }
+
+      .button-cancel{
+        width: 300px;
+        font-size: 44px;
+        height: 69px;
+        color: black;
+        background-color: rgb(99, 97, 97);
+        margin-right: 5%;
+      }
+
       .ul-comment{
           list-style: none;
           font-size: 83px;

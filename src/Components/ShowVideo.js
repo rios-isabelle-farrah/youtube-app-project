@@ -37,6 +37,11 @@ const ShowVideo = () =>
       setComment("");
     };
 
+    const handleCancel=()=>{
+      setFullName("")
+      setComment("")
+    }
+
     return (
       <div className="player-wrapper">
         <br></br>
@@ -79,7 +84,12 @@ const ShowVideo = () =>
               required
             />
             <div className="comment-div">
-              Cancel
+            <button
+                className="button-cancel"
+                onClick={handleCancel}
+              >
+                Cancel
+              </button>
               <button
                 className="button-comment"
                 type="submit"
