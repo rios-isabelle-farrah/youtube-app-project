@@ -17,6 +17,7 @@ const Home = (props) => {
         `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=9&q=${input}&key=${process.env.REACT_APP_API_KEY}`
       );
       setVideos(res.data.items);
+      debugger
     } catch (error) {
       console.log(error);
     }

@@ -1,4 +1,4 @@
-
+/* 
 
 .react-player{
     background-color: black;
@@ -6,8 +6,7 @@
     margin-top: 1%;
     margin-bottom: 4%;
     border:solid black 14px;
-    /* width: 100%;
-    height: 100%; */
+
 } 
 
 
@@ -15,8 +14,26 @@
     background-color: #221f1f;
     width: 100%;
     overflow: scroll;
+} */
+.main-show{
+    width: 100%;
+    height:100%;
+    overflow: scroll;
+    margin-left: 3%;
 }
 
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+  
+  }
+  
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
 
 
 .previous{
@@ -25,6 +42,7 @@
     height: 40px;
     width: 193px;
     font-size: 33px;
+    margin-bottom: 5%;
 }
 
 .div-comment{
@@ -35,6 +53,7 @@
     margin-right:15%;
     padding-top: 10px;
     margin-bottom:33px;
+    padding-right: 4%;
 }
 
 
@@ -76,31 +95,36 @@
 
       .comment-div{
           background-color: rgb(32, 32, 31);
-          height: 64px;
-          width: 50%;
+          height: 25%;
+          width: 70%;
           display: flex;
           justify-content: space-between;
           font-size: 54px;
-          margin-left:47%;
+          margin-left:27%;
           margin-top: 10px;
           color:rgb(216, 203, 203);
       }
 
       .button-comment{
-          width: 300px;
+          width: 40%;
           font-size: 44px;
-          height: 69px;
+          height: 25%;
           color: black;
           background-color: rgb(99, 97, 97);
       }
       .ul-comment{
+          display: flex;
           list-style: none;
+           flex-wrap:wrap; 
           font-size: 83px;
+       
+          width: 100%;
       }
       .li-comment{
         font-size: 40px; 
         display:flex;
-        width: 900px;
+        /* flex-wrap:wrap; */
+        width: 90%;
         text-align: left;
       }
 
@@ -108,3 +132,4 @@
           height: 83px;
           width: 83px;
       }
+
