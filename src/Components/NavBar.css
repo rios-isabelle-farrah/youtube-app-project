@@ -1,29 +1,28 @@
 .navBar {
   display: flex;
   flex-direction: column;
-  background-color:rgb(37, 35, 35);
+  background-color: rgb(37, 35, 35);
   width: 8%;
   height: 100%;
   margin-top: 0px;
   /* margin-bottom:82px; */
-   padding-top: 1%;
-   padding-left: 2%;
+  padding-top: 1%;
+  padding-left: 2%;
   transition: width 2s;
   /* position: fixed;
-  z-index: 89; */ 
+  z-index: 89; */
   /* yellow shows with this blocked^^^ */
   z-index: -2;
 }
 
-.navBar>* {
+.navBar > * {
   /* background-color: #f1f1f1; */
   color: white;
   width: 100px;
-  /* margin: 10px; */
+  margin: 10px;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
-  /* padding-bottom: 15px */
 }
 
 .navBar:hover {
@@ -53,52 +52,33 @@ color: red;
 <div class="myDIV">Hover over me.</div>
 <div class="hide">I am shown when someone hovers over the div above.</div> */
 
-.navBar > .allNavs > .widen{
-display: none;
-/* transition: 0s background-color; */
+.navBar > .allNavs > .widen {
+  display: none;
+  /* transition: 0s background-color; */
 }
 
 .navBar:hover > .allNavs > .widen {
-display: inline;
-color:white;
-position: absolute;
+  display: inline;
+  color: white;
+  position: absolute;
 }
 
-.widen{
-margin-left:12px;
+.widen {
+  margin-left: 12px;
 }
 
-/* img {
-margin-right: 15px;
-} */
+img {
+  margin-right: 15px;
+}
 
-#youtube{
-/* font-family: Arial, Helvetica, sans-serif;
-font-stretch: condensed; */
-height: 44px;
-font-family: roboto-condensed, sans-serif;
-font-weight: 400;
-font-style: normal;
+#youtube {
+  font-family: Arial, Helvetica, sans-serif;
+  font-stretch: condensed;
+  height: 44px;
 }
 
 .allNavs:hover {
-  background-size: 80px 80px;
   background-color: lightgray;
-  /* padding-bottom: 10px; */
-} 
-
-.allNavs > span {
-  margin-left: 15px;
-  font-family: roboto-condensed, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 38px;
-}
-
-#home {
-  height: 90px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 /* .expando {

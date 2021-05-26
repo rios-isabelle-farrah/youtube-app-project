@@ -37,8 +37,13 @@ const ShowVideo = () =>
       setComment("");
     };
 
+    const handleCancel=()=>{
+      setFullName("")
+      setComment("")
+    }
+
     return (
-      <div className="player-wrapper">
+      <div className="main-show">
         <br></br>
         {/* <button onClick={goBack}>Go Back</button> */}
         <button
@@ -49,12 +54,20 @@ const ShowVideo = () =>
           ❮ Previous
         </button>
         <br></br>
+        <div className="player-wrapper">
         <ReactPlayer
-          className="react-player"
-          width="1090px"
-          height="910px"
+              className="react-player"
+              playing
+              width="90%"
+              height="90%"
+              controls={false}
+          
+          // className="react-player"
+          // width="1090px"
+          // height="910px"
           url={`https://www.youtube.com/watch?v=${videoID}`}
         />
+        </div>
         <br></br>
         <br></br>
         <div className="div-comment">
@@ -79,7 +92,12 @@ const ShowVideo = () =>
               required
             />
             <div className="comment-div">
-              CANCEL
+            <button
+                className="button-cancel"
+                onClick={handleCancel}
+              >
+                Cancel
+              </button>
               <button
                 className="button-comment"
                 type="submit"
