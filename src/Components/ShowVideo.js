@@ -76,7 +76,7 @@ const ShowVideo = () =>
               className="input-name"
               type="text"
               name="fullName"
-              placeholder="your name"
+              placeholder="Name"
               value={fullName}
               onChange={handleName}
               required
@@ -103,7 +103,7 @@ const ShowVideo = () =>
                 type="submit"
                 alt="button to comment"
               >
-                Comment
+                COMMENT
               </button>
             </div>
           </form>
