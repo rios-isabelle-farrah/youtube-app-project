@@ -8,7 +8,6 @@ import "./Components/NavBar.css";
 import "./Components/About.css";
 import { useState } from "react";
 
-
 const App = () => {
   const [input, setInput] = useState("");
   const [videos, setVideos] = useState([]);
@@ -18,18 +17,17 @@ const App = () => {
 
   return (
     <div className="App">
-         <NavBar className="nav-bar" />
+      <NavBar className="nav-bar" />
       <Switch>
         <Route path={"/searchResult/:videoID"}>
-          <ShowVideo className="show-video"/>
-
-
+          <ShowVideo className="show-video" />
         </Route>
-        <Route path={"/about"} >
-         <About />
-         </Route>
+        <Route path={"/about"}>
+          <About />
+        </Route>
         <Route exact path={"/"}>
-          <Home className="home-top-header"
+          <Home
+            className="home-top-header"
             input={input}
             setInput={setInput}
             videos={videos}

@@ -1,135 +1,121 @@
-/* 
-
-.react-player{
-    background-color: black;
-    margin-left: 15%;
-    margin-top: 1%;
-    margin-bottom: 4%;
-    border:solid black 14px;
-
-} 
-
-
-.player-wrapper{
-    background-color: #221f1f;
-    width: 100%;
-    overflow: scroll;
-} */
-.main-show{
-    width: 100%;
-    height:100%;
-    overflow: scroll;
-    margin-left: 3%;
+.main-show {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  margin-left: 3%;
 }
 
 .player-wrapper {
-    position: relative;
-    padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
-  
-  }
-  
-  .react-player {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-
-
-.previous{
-    margin-top:1%;
-    margin-left:5%;
-    height: 40px;
-    width: 193px;
-    font-size: 33px;
-    margin-bottom: 5%;
+  position: relative;
+  padding-top: 56.25%; 
 }
 
-.div-comment{
-    background-color: rgb(32, 32, 31);
-    height: 2100px;
-    width: 67%;
-    margin-left:15%;
-    margin-right:15%;
-    padding-top: 10px;
-    margin-bottom:33px;
-    padding-right: 4%;
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
+.previous {
+  margin-top: 1%;
+  height: 40px;
+  width: 193px;
+  font-size: 33px;
+  margin-bottom: 5%;
+  border-radius: 7px;
+}
 
+.div-comment {
+  background-color: rgb(32, 32, 31);
+  height: 2100px;
+  width: 67%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 10px;
+  margin-bottom: 33px;
+  padding-right: 4%;
+}
 
+.input-name {
+  width: 28%;
+  height: 67px;
+  font-size: 40px;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  margin-left: 12px;
+  caret-color: white;
+  background-color: black;
+  margin-bottom: 8px;
+  color: white;
+}
 
+.input-comment {
+  width: 98%;
+  height: 67px;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  margin-left: 12px;
+  caret-color: white;
+  background-color: rgb(32, 32, 31);
+  border-bottom: #858585 solid 4px;
+  color: white;
+}
 
-      .input-name{
-        width: 28%;
-        height: 47px;
-        
-        font-size: 40px;
-        border: none;
-        
-        border-radius: 7px;
-        outline:none;
-        margin-left: 12px;
-        caret-color:white;
-        background-color: black;
-        margin-bottom:8px;
-        color: white;
+.comment-div {
+  background-color: rgb(32, 32, 31);
+  height: 25%;
+  width: 57%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 45%;
+  margin-top: 10px;
+}
 
-      }
-      .input-comment{
-        width: 98%;
-        height: 67px;
-        
-        font-size: 40px;
-        border: none;
-        
-        border-radius: 7px;
-        outline:none;
-        margin-left: 12px;
-        caret-color:white;
-        background-color: rgb(32, 32, 31);
-        border-bottom: #858585 solid 4px;
-        color: white;
+.button-comment {
+  width: 260px;
+  font-size: 44px;
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  height: 69px;
+  color: black;
+  background-color: #e5e5e5;
+  border-radius: 7px;
+}
 
-      }
+.button-cancel {
+  border-radius: 7px;
+  width: 220px;
+  font-size: 44px;
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  height: 69px;
+  color: black;
+  background-color: #e5e5e5;
+}
 
-      .comment-div{
-          background-color: rgb(32, 32, 31);
-          height: 25%;
-          width: 70%;
-          display: flex;
-          justify-content: space-between;
-          font-size: 54px;
-          margin-left:27%;
-          margin-top: 10px;
-          color:rgb(216, 203, 203);
-      }
+.ul-comment {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  font-size: 83px;
+  width: 100%;
+}
 
-      .button-comment{
-          width: 40%;
-          font-size: 44px;
-          height: 25%;
-          color: black;
-          background-color: rgb(99, 97, 97);
-      }
-      .ul-comment{
-          display: flex;
-          list-style: none;
-           flex-wrap:wrap; 
-          font-size: 83px;
-       
-          width: 100%;
-      }
-      .li-comment{
-        font-size: 40px; 
-        display:flex;
-        /* flex-wrap:wrap; */
-        width: 90%;
-        text-align: left;
-      }
+.li-comment {
+  font-size: 40px;
+font-family: roboto, sans-serif;
+font-weight: 500;
+font-style: normal;
+  display: flex;
+  width: 90%;
+  text-align: left;
+}
 
-      .round-avi{
-          height: 83px;
-          width: 83px;
-      }
-
+.round-avi {
+  height: 83px;
+  width: 83px;
+}
