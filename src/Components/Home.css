@@ -39,7 +39,10 @@
 }
 
 .input-top[type="text"]:focus {
-  background-color: lightgoldenrodyellow;
+  background-color: #f1f1f1;
+  opacity: 50%;
+  border: solid blue 3px;
+  /* border: solid #174786 3px; */
 }
 
 .magnify-glass {
@@ -56,7 +59,7 @@
   justify-content: space-between;
   border: black solid 6px;
   width: 70%;
-  height: 20px;
+  height: 24px;
   margin-top: 3px;
   font-size: 40px;
   padding-bottom: 30px;
@@ -124,6 +127,7 @@ li {
 .video-text {
   color: white;
   font-size: 22px;
+  text-align: left;
   font-family: roboto, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -131,11 +135,18 @@ li {
 }
 
 .video-channel {
-  color: rgb(65, 61, 61);
+  color: #6e6e6e;
   font-size: 24px;
   font-family: roboto, sans-serif;
   font-weight: 500;
   font-style: normal;
+  text-align: left;
+}
+
+.video-channel {
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
 a {
@@ -257,7 +268,8 @@ a {
   }
 
   .input-top[type="text"]:focus {
-    background-color: lightgoldenrodyellow;
+    background-color: #f1f1f1;
+    border: solid blue 2px;
   }
 
   .magnify-glass {
