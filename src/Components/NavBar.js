@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <nav className="navBar">
       <NavLink className="allNavs" id="home" to={"/"}>
-        <img
+        <img className="icon-images"
           id="burger"
           height="80px"
           width="80px"
@@ -15,6 +15,7 @@ const NavBar = () => {
       </NavLink>
       <NavLink className="allNavs" id="home" to={"/"}>
         <img
+        className="icon-images"
           height="80px"
           width="80px"
           src="https://teen.bsbwlibrary.org/wp-content/uploads/2016/06/white-home-icon-transparent-homeicon.png"
@@ -24,6 +25,7 @@ const NavBar = () => {
       </NavLink>
       <NavLink className="allNavs" id="home" to={"/About"}>
         <img
+        className="icon-images"
           height="80px"
           width="80px"
           src="https://icon-library.com/images/information-icon-white/information-icon-white-4.jpg"

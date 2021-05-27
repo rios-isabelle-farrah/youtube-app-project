@@ -8,16 +8,16 @@ const About = () => {
       </section>
       <div className="project-description">
         This YouTube Clone Application was created with React and incorporates,
-        but is not limited to: object destructuring, state
-        management, and functional components using hooks. As well as the
-        passing of props, API calls with Axios, and git repository management.
-        By using the YouTube API, this application is able to search for videos
-        by user input and display the most popular videos, just like the real
-        YouTube application.<br></br>
+        but is not limited to: object destructuring, state management, and
+        functional components using hooks. As well as the passing of props, API
+        calls with Axios, and git repository management. By using the YouTube
+        API, this application is able to search for videos by user input and
+        display the most popular videos, just like the real YouTube application.
+        <br></br>
         <br></br> The web development team used agile scrum methodology
         practices to manage the project and carry out their vision through
         extensive quality management and ultimately resulted in a full scale
-        application deployment.<br></br> 
+        application deployment.<br></br>
         Meet the Development Team Below!!!
       </div>
       <section className="green-top">
@@ -40,8 +40,13 @@ const About = () => {
             <p className="bio">
               As a selected Fellow at Pursuit, an intensive 12-month software
               engineering fellowship with a 9% acceptance rate, I am a Full
-              Stack Web Developer.  <br></br>
-              <br></br>Given my passion for helping others learn technology to ease their life, my goal is to apply my skills to develop software programs that are accessible and user-friendly. I am also eager to contribute to the infrastructure of teaching Quran in an interactive way. I am currently working to understand how technology could help me achieve my goals.
+              Stack Web Developer. <br></br>
+              <br></br>Given my passion for helping others learn technology to
+              ease their life, my goal is to apply my skills to develop software
+              programs that are accessible and user-friendly. I am also eager to
+              contribute to the infrastructure of teaching Quran in an
+              interactive way. I am currently working to understand how
+              technology could help me achieve my goals.
             </p>
             <p className="github">
               Github:{" "}

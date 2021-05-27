@@ -66,3 +66,33 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+
+
+@media only screen and (max-width: 700px) {
+
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(37, 35, 35);
+    width: 13%;
+    height: 100%;
+    margin-top: 0px;
+    padding-top: 1%;
+    padding-left: 2%;
+    transition: width 2s;
+    z-index: -2;
+  }
+
+
+  .icon-images {
+    margin-right: 36px;
+    margin-left: 4px;
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+
+
