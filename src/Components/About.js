@@ -3,6 +3,34 @@ import React from "react";
 const About = () => {
   return (
     <main>
+
+<div className="project-description">
+<h1 className="team-description">------- Project Description -------</h1>
+<section className="white-top">
+        {/* <div className="white-header-left"></div>{" "} */}
+    
+        {/* <div className="white-header-right"></div> */}
+
+
+ This YouTube Clone Application was created with React and incorporates,
+  but is not limited to: project structure, object destructuring, state
+   management, functional components that use hooks, passing props, 
+   API calls with Axios, and git repository management. By using the
+    Youtube API, this application is able to search for by subject and 
+    display the most popular videos, just like the real YouTube application. 
+
+The web development team used agile scrum methodology practices to 
+manage the project and carry their vision through extensive quality 
+management and ultimately full scale application deployment.
+
+Meet out Development Team Below!!!
+</section>
+
+</div>
+
+
+
+
       <section className="green-top">
         <div className="green-header-left"></div>{" "}
         <h1 className="green-team">OUR TEAM</h1>
