@@ -25,23 +25,25 @@
   margin-bottom: 1%;
 }
 
-.input-top {
+#input-top {
   display: flex;
   width: 98%;
   height: 47px;
   font-size: 40px;
+  color: black;
   border: none;
   border-radius: 7px;
   outline: none;
   margin-left: 12px;
   caret-color: white;
-  background-color: black;
+  background-color: white;
 }
 
 .input-top[type="text"]:focus {
   background-color: #f1f1f1;
   opacity: 50%;
   border: solid blue 3px;
+  /* color: rgba(119, 115, 115, 0.452); */
   /* border: solid #174786 3px; */
 }
 

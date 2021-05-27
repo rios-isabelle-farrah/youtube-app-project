@@ -37,7 +37,7 @@ const Home = (props) => {
         </div>
         <section className="search-section">
           <input
-            className="input-top"
+            id="input-top"
             type="text"
             value={input}
             onChange={handleInput}
