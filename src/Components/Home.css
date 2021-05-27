@@ -35,15 +35,15 @@
   outline: none;
   margin-left: 12px;
   caret-color: white;
+  color: white;
   background-color: black;
 }
 
-.input-top[type="text"]:focus {
+/* .input-top[type="text"]:focus {
   background-color: #f1f1f1;
   opacity: 50%;
   border: solid blue 3px;
-  /* border: solid #174786 3px; */
-}
+} */
 
 .magnify-glass {
   width: 30px;
@@ -230,7 +230,6 @@ a {
     flex-wrap: column;
     border-left: rgb(138, 134, 135) solid 1px;
     width: 97%;
-  
     height: 100%;
     padding-bottom: 1%;
     padding-top: 1%;
@@ -255,23 +254,23 @@ a {
 
   .input-top {
     display: flex;
-      width: 100%;
+    width: 100%;
     height: 100%;
     font-size: 40px;
     border: none;
     border-radius: 7px;
     outline: none;
-
     caret-color: white;
     background-color: black;
+    color: white;
     padding-top: 4%;
     margin-top: 2%;
   }
 
-  .input-top[type="text"]:focus {
+  /* .input-top[type="text"]:focus {
     background-color: #f1f1f1;
     border: solid blue 2px;
-  }
+  } */
 
   .magnify-glass {
     width: 40px;
@@ -311,18 +310,12 @@ a {
     margin-bottom: 13px;
     padding-bottom: 10px;
   }
-.image-boxes{
 
-  width: 80%;
-  margin-left:2%;
-  margin-right:15%;
-  background-color:black;
-  padding-top: 39px;
-
-}
-
-
-
-
-
+  .image-boxes {
+    width: 80%;
+    margin-left: 2%;
+    margin-right: 15%;
+    background-color: black;
+    padding-top: 39px;
+  }
 }
