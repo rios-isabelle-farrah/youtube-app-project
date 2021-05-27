@@ -225,21 +225,21 @@ a {
   height: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .main-div {
     display: flex;
     flex-direction: column;
     flex-wrap: column;
     border-left: rgb(138, 134, 135) solid 1px;
     width: 97%;
-    background-color: yellow;
+  
     height: 100%;
     padding-bottom: 1%;
     padding-top: 1%;
     margin-bottom: 0%;
     margin-left: 0%;
     padding-left: 2%;
-    padding-right: 2%;
+    padding-right: 10%;
   }
 
   .form-top {
@@ -257,16 +257,17 @@ a {
 
   .input-top {
     display: flex;
-    width: 98%;
+      width: 100%;
     height: 100%;
     font-size: 40px;
     border: none;
     border-radius: 7px;
     outline: none;
-    margin-left: 4%;
+
     caret-color: white;
     background-color: black;
     padding-top: 4%;
+    margin-top: 2%;
   }
 
   .input-top[type="text"]:focus {
@@ -275,10 +276,10 @@ a {
   }
 
   .magnify-glass {
-    width: 30px;
-    height: 30px;
-    margin-top: 20px;
-    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    margin-top: 65px;
+    font-size: 60px;
     margin-bottom: 32px;
     cursor: pointer;
   }
@@ -288,16 +289,17 @@ a {
     justify-content: space-between;
     border: black solid 6px;
     width: 97%;
-    height: 20%;
-    margin-top: 3px;
+    height: 18%;
+    margin-top: 22px;
     font-size: 40px;
     padding-bottom: 30px;
-    padding-top: 2px;
+    padding-top: 18px;
     border-radius: 12px;
     background-color: black;
     border: rgb(65, 61, 61) solid 1px;
     align-self: center;
     align-content: center;
+    align-items: center;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -311,4 +313,18 @@ a {
     margin-bottom: 13px;
     padding-bottom: 10px;
   }
+.image-boxes{
+
+  width: 80%;
+  margin-left:2%;
+  margin-right:15%;
+  background-color:black;
+  padding-top: 39px;
+
+}
+
+
+
+
+
 }
