@@ -34,7 +34,22 @@ main {
   height: 124px;
 }
 
-.green-team {
+.description-header {
+ text-align: center;
+ padding-right: 3.5%;
+}
+
+.project-description {
+  width: 90%;
+  padding-left: 3%;
+  text-align: center;
+  font-family: adelle-condensed, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 42px;
+}
+
+.green-team, .team-description {
   color: black;
   font-size: 104px;
   font-family: roboto-condensed, sans-serif;
@@ -85,7 +100,7 @@ font-style: normal;
 
 .github {
   color: black;
-  font-size: 23px;
+  font-size: 26px;
   font-family: roboto-condensed, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -95,7 +110,7 @@ font-style: normal;
   font-family: adelle-condensed, serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .pics {
